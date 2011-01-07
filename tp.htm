@@ -1,0 +1,186 @@
+<html>
+<head>
+<script src="jquery-1.4.4.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body{
+font-family:Tahoma, Georgia, Times, serif;
+background-color:#000000;
+font-weight:bold;
+}
+
+.project {
+border:1px solid white;
+height:480px;
+width:400px;
+padding:2px;
+background-color:#DDDDDD;
+}
+
+.project_title{
+height:32px;
+font-size:18px;
+font-weight:bold;
+line-height: 1.5em;
+text-indent: 0.5em;
+border-bottom:1px solid black;
+}
+
+/*
+.bullets{
+	font-size:14px;
+	font-weight:bold;
+	list-style:inside;
+}
+/*
+
+.bullets li{
+background-color:#eeeeee;
+float:left;
+clear:left;
+padding:2px;
+}
+*/
+.task{
+background-color:#aaa;
+font-size:12px;
+margin-left:2px;
+padding:2px;
+/*border:1px solid black;*/
+}
+/*
+.tasks li{
+padding:0;
+margin:0;
+text-indent:0;
+left:0;
+}
+*/
+.tasks{
+background-color:#EEEEEE;
+border:1px solid #666666;
+}
+
+.tasks #task{
+margin:2px;
+position:relative;
+background-color:#DDDDDD;
+}
+.notes{
+width:100%;
+clear:left;
+}
+.note{
+width:97%;
+font-size:12px;
+font-weight:normal;
+background-color:#eeeeee;
+padding:4px;
+line-height:16px;
+text-indent:6px;
+}
+
+
+.label{
+float:left;
+background-color:#DDDDDD;
+width:80px;
+text-align:right;
+padding:2px;
+}
+
+
+.note_label{
+float:left;
+background-color:#DDDDDD;
+text-align:left;
+padding:3px;
+}
+
+hr{
+display:block;
+line-height:0px;
+height:0px;
+clear:both;
+}
+
+.time_est{
+float:left;
+display:inline;
+padding:2px;
+}
+
+.time_est div{
+float:left;
+color:#FFFFFF;
+}
+ul{
+padding:0px;
+margin:0px;
+margin-left:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="project">
+	
+	<div class="project_title">
+		Project #1
+	</div>
+
+<ul><li>summary</li>
+	<li>team</li>
+	<li>tasks
+		<div class="tasks">
+			<div id="task" class="tasK">task #1
+				<div class="task">
+				 	<div class="label">Time Est:</div>
+						<div class="time_est"> 
+						
+						<div style="float:right;">&nbsp; 15.5</div>
+						<div style="height:10px;width:200px;background-color:#ccc;float:left;margin-left:2px; margin-top:2px;"></div>
+					
+					</div>
+					
+					<br style="clear:left">
+					
+					<div class="label">Time Spent:</div>
+						<div class="time_est"> 
+						
+						<div style="float:right;">&nbsp;7</div>
+						
+						<div style="height:10px;width:100px;background-color:#ccc;float:left;margin-left:2px;margin-top:2px;"></div>
+					
+					
+					</div>
+					<div class="notes"><span class="note_label" >Notes:</span><div class="note">this is a note, that goes on and on and on and on and on and on and on and on and on adn on
+					
+					</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="task" id="task">task #2
+					
+		</div>
+	</li>
+	<li>
+	Timetable<br>
+		<img src="cal_336x176.png" style="border:1px solid black;">
+	</li>
+	
+</ul>
+
+
+</div>
+
+
+</body>
+
+</html>
